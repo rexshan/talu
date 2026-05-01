@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="color-scheme" content="light" />
+  <meta name="description" content="Talu Privacy Policy" />
+  <title>Talu Privacy Policy</title>
+  <style>
+    :root {
+      --bg: #0f1726;
+      --panel: rgba(17, 25, 39, 0.86);
+      --panel-2: rgba(25, 37, 58, 0.92);
+      --text: #eef3fb;
+      --muted: #b3c0d4;
+      --soft: #8091ab;
+      --border: rgba(255, 255, 255, 0.08);
+      --accent: #6ea2ff;
+      --shadow: 0 24px 80px rgba(0, 0, 0, 0.35);
+    }
+
+    * { box-sizing: border-box; }
+
+    html, body {
+      margin: 0;
+      min-height: 100%;
+      background:
+        radial-gradient(circle at top left, rgba(110, 162, 255, 0.20), transparent 34%),
+        radial-gradient(circle at top right, rgba(255, 183, 142, 0.12), transparent 26%),
+        linear-gradient(160deg, #10192a 0%, #0d1422 54%, #09101a 100%);
+      color: var(--text);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.6;
+    }
+
+    body {
+      padding: 32px 18px 56px;
+    }
+
+    .wrap {
+      max-width: 920px;
+      margin: 0 auto;
+    }
+
+    .hero {
+      position: relative;
+      overflow: hidden;
+      border: 1px solid var(--border);
+      border-radius: 28px;
+      background: linear-gradient(180deg, rgba(26, 36, 54, 0.92), rgba(16, 24, 38, 0.86));
+      box-shadow: var(--shadow);
+      padding: 34px 28px;
+      margin-bottom: 18px;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: auto -80px -90px auto;
+      width: 240px;
+      height: 240px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(110, 162, 255, 0.26), transparent 68%);
+      filter: blur(2px);
+      pointer-events: none;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      gap: 10px;
+      align-items: center;
+      padding: 8px 14px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      color: var(--muted);
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.02em;
+    }
+
+    h1 {
+      margin: 18px 0 8px;
+      font-size: clamp(2rem, 5vw, 3.4rem);
+      line-height: 1.06;
+      letter-spacing: -0.04em;
+    }
+
+    .lede {
+      margin: 0;
+      max-width: 70ch;
+      color: var(--muted);
+      font-size: 1rem;
+    }
+
+    .meta {
+      margin-top: 18px;
+      color: var(--soft);
+      font-size: 0.95rem;
+      font-weight: 600;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(12, minmax(0, 1fr));
+      gap: 16px;
+    }
+
+    .card {
+      grid-column: span 12;
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      padding: 22px 20px;
+      box-shadow: 0 10px 36px rgba(0, 0, 0, 0.2);
+      backdrop-filter: blur(14px);
+    }
+
+    .card h2 {
+      margin: 0 0 10px;
+      font-size: 1.05rem;
+      line-height: 1.3;
+      letter-spacing: -0.02em;
+    }
+
+    .card p {
+      margin: 0;
+      color: var(--muted);
+    }
+
+    .summary {
+      display: grid;
+      gap: 12px;
+      margin-bottom: 18px;
+    }
+
+    .summary-item {
+      background: var(--panel-2);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 16px 18px;
+    }
+
+    .summary-item strong {
+      display: block;
+      margin-bottom: 4px;
+      color: var(--text);
+    }
+
+    .summary-item span {
+      color: var(--muted);
+    }
+
+    a {
+      color: #b8d2ff;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .footer {
+      margin-top: 20px;
+      color: var(--soft);
+      font-size: 0.92rem;
+    }
+
+    @media (min-width: 760px) {
+      .hero {
+        padding: 44px 44px 38px;
+      }
+
+      .card {
+        padding: 26px 24px;
+      }
+
+      .summary {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <section class="hero" aria-labelledby="title">
+      <div class="eyebrow">Talu Privacy Policy</div>
+      <h1 id="title">Privacy Policy</h1>
+      <p class="lede">
+        This page mirrors the in-app privacy policy for Talu and is intended for App Store submission and public hosting.
+      </p>
+      <div class="meta">Last updated: March 20, 2026</div>
+    </section>
+
+    <section class="summary" aria-label="Quick summary">
+      <div class="summary-item">
+        <strong>On-device first</strong>
+        <span>Core gameplay data is stored locally on your device.</span>
+      </div>
+      <div class="summary-item">
+        <strong>No account required</strong>
+        <span>The current app does not require registration or sign-in.</span>
+      </div>
+      <div class="summary-item">
+        <strong>No tracking</strong>
+        <span>The current app does not use advertising SDKs or cross-app tracking.</span>
+      </div>
+    </section>
+
+    <section class="grid">
+      <article class="card">
+        <h2>1. Overview</h2>
+        <p>Talu is designed to work primarily on your device. Based on the current version of the app, gameplay data is stored locally on the device and is not sent to a developer-operated server.</p>
+      </article>
+
+      <article class="card">
+        <h2>2. Information Stored on Your Device</h2>
+        <p>The app may store a nickname you choose, your game difficulty preference, and your local game history and scores. This information is used only to make the app function as expected for you on your device.</p>
+      </article>
+
+      <article class="card">
+        <h2>3. Information We Do Not Collect Remotely</h2>
+        <p>The app does not currently require account registration, does not provide online matchmaking, does not upload gameplay history to a remote server, and does not use your nickname for advertising, analytics, or profiling.</p>
+      </article>
+
+      <article class="card">
+        <h2>4. Tracking, Advertising, and Third Parties</h2>
+        <p>The app does not currently use third-party advertising SDKs, does not track you across apps or websites, and does not sell or share your personal information with data brokers or advertising partners.</p>
+      </article>
+
+      <article class="card">
+        <h2>5. Permissions</h2>
+        <p>The app is not intended to request access to sensitive personal resources such as your contacts, photos, microphone recordings, or precise location in order to provide its core gameplay features.</p>
+      </article>
+
+      <article class="card">
+        <h2>6. Data Retention and Deletion</h2>
+        <p>Because app data is stored locally, you can remove most stored information directly in the app. For example, you can clear game records and reset preferences in Settings, and you can remove the locally stored nickname by logging out. Deleting the app from your device will also remove app data stored locally by the app in the normal course of iOS device management.</p>
+      </article>
+
+      <article class="card">
+        <h2>7. Children's Privacy</h2>
+        <p>The app is a casual game and is not intentionally designed to collect personal information from children through remote transmission. If future versions add online features, this policy should be updated before release.</p>
+      </article>
+
+      <article class="card">
+        <h2>8. Security</h2>
+        <p>We aim to keep the app simple and privacy-conscious by minimizing data use and keeping gameplay information on-device where practical. However, no device or software environment can be guaranteed to be completely secure.</p>
+      </article>
+
+      <article class="card">
+        <h2>9. Changes to This Policy</h2>
+        <p>This Privacy Policy may be updated if the app's features or data practices change. If a future version adds online services, analytics, cloud sync, sign-in providers, or advertising, this policy should be revised before those features are made available.</p>
+      </article>
+
+      <article class="card">
+        <h2>10. Contact</h2>
+        <p>If you have questions about this Privacy Policy, please email service@taluim.cc. We usually reply within 1-3 business days.</p>
+      </article>
+    </section>
+
+    <p class="footer">
+      Recommended GitHub Pages URL pattern: <a href="#">https://&lt;your-username&gt;.github.io/&lt;repo&gt;/apple/</a>
+    </p>
+  </main>
+</body>
+</html>
