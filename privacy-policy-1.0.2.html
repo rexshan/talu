@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="color-scheme" content="light" />
+  <meta name="description" content="Azizi Privacy Policy" />
+  <title>Azizi Privacy Policy</title>
+  <style>
+    :root {
+      --bg: #0f1726;
+      --panel: rgba(17, 25, 39, 0.86);
+      --panel-2: rgba(25, 37, 58, 0.92);
+      --text: #eef3fb;
+      --muted: #b3c0d4;
+      --soft: #8091ab;
+      --border: rgba(255, 255, 255, 0.08);
+      --accent: #6ea2ff;
+      --shadow: 0 24px 80px rgba(0, 0, 0, 0.35);
+    }
+
+    * { box-sizing: border-box; }
+
+    html, body {
+      margin: 0;
+      min-height: 100%;
+      background:
+        radial-gradient(circle at top left, rgba(110, 162, 255, 0.20), transparent 34%),
+        radial-gradient(circle at top right, rgba(255, 183, 142, 0.12), transparent 26%),
+        linear-gradient(160deg, #10192a 0%, #0d1422 54%, #09101a 100%);
+      color: var(--text);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.6;
+    }
+
+    body {
+      padding: 32px 18px 56px;
+    }
+
+    .wrap {
+      max-width: 920px;
+      margin: 0 auto;
+    }
+
+    .hero {
+      position: relative;
+      overflow: hidden;
+      border: 1px solid var(--border);
+      border-radius: 28px;
+      background: linear-gradient(180deg, rgba(26, 36, 54, 0.92), rgba(16, 24, 38, 0.86));
+      box-shadow: var(--shadow);
+      padding: 34px 28px;
+      margin-bottom: 18px;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: auto -80px -90px auto;
+      width: 240px;
+      height: 240px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(110, 162, 255, 0.26), transparent 68%);
+      filter: blur(2px);
+      pointer-events: none;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      gap: 10px;
+      align-items: center;
+      padding: 8px 14px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      color: var(--muted);
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.02em;
+    }
+
+    h1 {
+      margin: 18px 0 8px;
+      font-size: clamp(2rem, 5vw, 3.4rem);
+      line-height: 1.06;
+      letter-spacing: -0.04em;
+    }
+
+    .lede {
+      margin: 0;
+      max-width: 70ch;
+      color: var(--muted);
+      font-size: 1rem;
+    }
+
+    .meta {
+      margin-top: 18px;
+      color: var(--soft);
+      font-size: 0.95rem;
+      font-weight: 600;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(12, minmax(0, 1fr));
+      gap: 16px;
+    }
+
+    .card {
+      grid-column: span 12;
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      padding: 22px 20px;
+      box-shadow: 0 10px 36px rgba(0, 0, 0, 0.2);
+      backdrop-filter: blur(14px);
+    }
+
+    .card h2 {
+      margin: 0 0 10px;
+      font-size: 1.05rem;
+      line-height: 1.3;
+      letter-spacing: -0.02em;
+    }
+
+    .card p {
+      margin: 0;
+      color: var(--muted);
+    }
+
+    .summary {
+      display: grid;
+      gap: 12px;
+      margin-bottom: 18px;
+    }
+
+    .summary-item {
+      background: var(--panel-2);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 16px 18px;
+    }
+
+    .summary-item strong {
+      display: block;
+      margin-bottom: 4px;
+      color: var(--text);
+    }
+
+    .summary-item span {
+      color: var(--muted);
+    }
+
+    a {
+      color: #b8d2ff;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .footer {
+      margin-top: 20px;
+      color: var(--soft);
+      font-size: 0.92rem;
+    }
+
+    @media (min-width: 760px) {
+      .hero {
+        padding: 44px 44px 38px;
+      }
+
+      .card {
+        padding: 26px 24px;
+      }
+
+      .summary {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <section class="hero" aria-labelledby="title">
+      <div class="eyebrow">Azizi Privacy Policy</div>
+      <h1 id="title">Privacy Policy</h1>
+      <p class="lede">
+        This page mirrors the in-app privacy policy for Azizi and is intended for App Store submission and public hosting.
+      </p>
+      <div class="meta">Last updated: November 7, 2026</div>
+    </section>
+
+    <section class="summary" aria-label="Quick summary">
+      <div class="summary-item">
+        <strong>Account and online features</strong>
+        <span>Azizi uses accounts and online services to provide sign-in and multiplayer features.</span>
+      </div>
+      <div class="summary-item">
+        <strong>Your choice</strong>
+        <span>You may use a guest profile or sign in with an account.</span>
+      </div>
+      <div class="summary-item">
+        <strong>No advertising tracking</strong>
+        <span>We do not use third-party advertising, analytics, or crash-reporting SDKs.</span>
+      </div>
+    </section>
+
+    <section class="grid">
+      <article class="card">
+        <h2>1. Overview</h2>
+        <p>Azizi provides casual games and online features. To provide sign-in, account security, profiles, multiplayer, and connection services, the app communicates with developer-operated servers. Some gameplay preferences and records may also be stored locally on your device.</p>
+      </article>
+
+      <article class="card">
+        <h2>2. Information We Process</h2>
+        <p>Depending on how you use Azizi, we may process your Tal ID, profile information such as nickname, avatar, gender, and birth date, and login credentials. If you choose Sign in with Apple, we process the Apple account identifier and any information Apple makes available for that sign-in, such as a private relay email address. We also process your device identifier, device type, IP address, app version, login session token, and basic connection, presence, and room state needed to operate online features. Multiplayer features may process game room activity, drawing strokes, guesses, game results, and reports or blocks you submit.</p>
+      </article>
+
+      <article class="card">
+        <h2>3. How We Use Information</h2>
+        <p>We use this information to create and protect accounts, authenticate sign-in, maintain sessions and online connections, provide profile and multiplayer features, prevent abuse, respond to reports and support requests, and operate and secure our services. We do not use your information for targeted advertising or profiling.</p>
+      </article>
+
+      <article class="card">
+        <h2>4. Tracking, Advertising, and Third Parties</h2>
+        <p>Azizi does not use third-party advertising, analytics, or crash-reporting SDKs, and does not track you across apps or websites for advertising. We do not sell personal information or share it with data brokers or advertising partners. If you choose Sign in with Apple, Apple processes the sign-in transaction under Apple's own privacy practices.</p>
+      </article>
+
+      <article class="card">
+        <h2>5. Permissions</h2>
+        <p>Azizi does not require access to your contacts, photo library, microphone recordings, or precise location for its core gameplay, account, and online features.</p>
+      </article>
+
+      <article class="card">
+        <h2>6. Data Retention and Deletion</h2>
+        <p>Your account remains active while you keep it. You can log out from the app at any time. You can also request deletion from the in-app account settings. Deleted accounts are kept for a 30-day recovery period, during which you can explicitly choose to restore the account after verifying your sign-in method. After the recovery period, we permanently delete the account, profile, linked third-party sign-in binding, and related account records. Limited game, safety, fraud-prevention, and operational records may be retained only as needed to protect users, investigate abuse, meet legal obligations, and operate the service. Device and operational log data are retained only as needed to operate, secure, and troubleshoot the service, and are deleted periodically. Removing the app removes locally stored app data in the normal course of iOS device management.</p>
+      </article>
+
+      <article class="card">
+        <h2>7. Children's Privacy</h2>
+        <p>Azizi is not directed to children where parental consent is required by applicable law. If you believe a child has provided personal information without the required consent, contact us so that we can review the request.</p>
+      </article>
+
+      <article class="card">
+        <h2>8. Security</h2>
+        <p>We use reasonable technical and organizational measures to protect information. However, no internet-connected service can be guaranteed to be completely secure.</p>
+      </article>
+
+      <article class="card">
+        <h2>9. Changes to This Policy</h2>
+        <p>We may update this Privacy Policy when our features or data practices change. We will publish the updated version on this page and revise the “Last updated” date.</p>
+      </article>
+
+      <article class="card">
+        <h2>10. Contact</h2>
+        <p>If you have questions about this Privacy Policy, please email service@taluim.cc. We usually reply within 1-3 business days.</p>
+      </article>
+    </section>
+
+    <p class="footer">
+      <a href="mailto:service@taluim.cc">service@taluim.cc</a>
+    </p>
+  </main>
+</body>
+</html>
